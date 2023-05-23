@@ -1,0 +1,59 @@
+#### DO NOT CHANGE ####
+site_name: Data Developer Platform
+copyright: Supported by The Modern Data Company (https://themoderndatacompany.com) 
+theme:
+    name: material
+    custom_dir: overrides
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.instant
+        - navigation.footer
+        - toc.integrate
+        - header.autohide        
+    logo: assets/ddp.png
+    favicon: assets/favicon.ico
+    font:
+        text: Spectral
+        code: Source Code Pro
+    palette:
+        primary: white
+plugins:
+    - mermaid2
+    - search
+extra_css:
+    - stylesheets/extra.css
+extra_javascript:
+    - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.highlight
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+#   - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 5
+      separator: "-"
+  - attr_list
+  - md_in_html
+
+#### Update for navigation tabs/options ####      
+nav:
+    - Learn: index.md
+    - Ecosystem: ecosystem.md
+    - Community: community.md
+    - Experts: experts.md        
