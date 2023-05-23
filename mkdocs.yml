@@ -53,7 +53,8 @@ markdown_extensions:
 
 #### Update for navigation tabs/options ####      
 nav:
-    - Learn: index.md
+    - Home: index.md
+    - Learn: essence/index.md
     - Ecosystem: ecosystem.md
     - Community: community.md
     - Experts: experts.md        
