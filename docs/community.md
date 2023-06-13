@@ -2,7 +2,7 @@
 
 # A modern way to run data engineering teams
 
-Data teams are drained with continuous plumbing around integrations and fragile pipelines which leaves little or no time to focus on the real value - data and data applications.
+> Data teams are drained with continuous plumbing around integrations and fragile pipelines which leaves little or no time to focus on the real value - data and data applications.
 
 Businesses that have a good grasp on data realise the difference between winning and losing the competitive edge. Many data-first organizations understood this long back and dedicated major projects to becoming data-first. The likes of Uber, Google, and Airbnb has shown an inspiring discipline around data.
 
