@@ -1,6 +1,6 @@
-# Architecture
+## Architecture
 
-# Conceptual Architecture: The Trifecta
+## Conceptual Architecture: The Trifecta
 
 DDP allow users to operationalise the platform through a triple-plane conceptual architecture where the control is forked between one central plane for core universal components, one or more development planes for workload management, and one or more data activation planes for localised or domain-specific deployment.
 
@@ -8,7 +8,7 @@ Control & Data plane separation decouples the governance and execution of data a
 
 ![DDP Planes Specification.png](./architecture/ddp_planes_specification.png)
 
-## Control Plane
+### Control Plane
 
 The Control Plane helps admins govern the data ecosystem through centralised management and control of vertical components.
 
@@ -16,7 +16,7 @@ The Control Plane helps admins govern the data ecosystem through centralised man
 - Orchestration of data workloads, compute cluster life-cycle management, and version control of a Data Operating System’s resources.
 - Metadata management of different types of data assets.
 
-## Development Plane
+### Development Plane
 
 The Development plane helps data developers, specifically data engineers, to create workload specifications for data products and data applications. 
 
@@ -25,7 +25,7 @@ The Development plane helps data developers, specifically data engineers, to cre
 - Declarative environment and application configuration management
 - Automated and version-controlled deployment
 
-## Data Activation Plane
+### Data Activation Plane
 
 The Data Plane helps data developers to deploy, manage and scale data products.
 
@@ -34,41 +34,41 @@ The Data Plane helps data developers to deploy, manage and scale data products.
 - Complex event processing engine for stateful computations over data streams.
 - Declarative DevOps SDK to publish data products and apps in production.
 
-## Integrating the Planes
+### Integrating the Planes
 
-### **Integrating Control and Development Planes**
+#### **Integrating Control and Development Planes**
 
 The control plane takes the lead on universal jobs, such as metadata management, governance, and orchestration. The orchestrator in the control plane consumes instructions from the specification file in the development plane and triggers the infrastructure by provisioning and de-provisioning resources and executing the required runs. For every trigger, the orchestrator checks in with the governance engine to validate policy execution and logs metadata with the metadata engine.
 
-### **Integrating Development and Data Activation Planes**
+#### **Integrating Development and Data Activation Planes**
 
 The specification generated in the development plane is deployed and run on the data activation plane. While the resources are arranged in the development plane, they are executed in the activation plane, where the actual operations on data take place. Ideally, a single specification file in the development plane has a 1:1 relationship with a data product in the data activation plane, but this is not necessarily the norm. Developers can also build and trigger a config file with multiple data product references to target a specific use case.
 
-### **Integrating Control and Data Activation Planes**
+#### **Integrating Control and Data Activation Planes**
 
 The orchestrator in the control plane is the heart of the DDP and ensures the resources in the specification (from the development plane) are executed in the right order in the data activation plane. For every operation on data, the orchestrator checks in with the governance engine to validate access and masking policies on the data. Every operation also generates tons of metadata which get logged into a database through the metadata engine.
 
-# Technical Architecture: Multilayered Kernel
+## Technical Architecture: Multilayered Kernel
 
 DOS is enabled through a multilayered kernel architecture that allows dedicated platform engineering teams to operate the system’s core primitives without affecting the business or application user’s day-to-day operations. Like the kernel of any operating system, it facilitates communications between users and primitives of the data operating system on the one hand and the binary world of the machines on the other. Each layer is an abstraction that translates low level-APIs into high level-APIs for usage by the different layers, components, or users of a Data Operating System. The kernels can logically be separated into three layers.
 
 The layered architecture promotes a unified experience as opposed to the complexity overheads of a microservices architecture imposed by the modern data stack. While the microservices architecture has some benefits, it also comes with performance, maintenance, security, and expertise overheads that can ultimately cost the organisation low ROI on data teams and high time to ROI for data applications. On the other hand, the layered approach promotes a loosely coupled yet tightly integrated set of components to disband the disadvantages of the modern data stack.
 
-### Cloud Kernel
+#### Cloud Kernel
 
 Cloud Kernel makes it possible for a Data Operating System to work with multiple cloud platforms without requiring specific integrations for each one. The Data Operating System uses several custom-built operators to abstract the VMs and network systems provisioned by the cloud provider. This allows users to not worry about the underlying protocols of the cloud provider and only communicate with the high-level APIs provided by the cloud kernel, making DOS truly cloud-agnostic.
 
-### Core Kernel
+#### Core Kernel
 
 Core Kernel provides another degree of abstraction by further translating the APIs of the cloud kernel into higher-order functions. From a user’s perspective, the core kernel is where the activities like resource allocation, orchestration of primitives, scheduling, and database management occur. The cluster and compute that you need to carry out processes are declared here; the core kernel then communicates with the cloud kernel on your behalf to provision the requisite VMs or node pools and pods.
 
-### User Kernel
+#### User Kernel
 
 User kernel is the third layer of abstraction over the APIs of the core and cloud kernels. The secondary extension points and programming paradigms of the Data Operating System, like the various Stacks and certain Primitives, can be envisioned to be working at this level. While you can directly communicate with the cloud kernel APIs, as a user of the Data Operating System, you can choose to rather work with the core and user kernels alone. The core kernel is where users work with essential features like Security, Metadata Management, and Resource Orchestration. In contrast, the user kernel can be thought of as the layer where the users have complete flexibility in terms of which components or primitives they want to leverage and which they do not require.
 
 ![Untitled](./architecture/untitled.png)
 
-# Structural Architecture: Hierarchical Model
+## Structural Architecture: Hierarchical Model
 
 > “Complex subsystems can evolve from simple systems only if there are stable intermediate forms. That may explain why hierarchies are so common in the systems nature presents to us among all possible complex forms. They reduce the amount of information that any part of the system has to keep track of.” ~ *Donella H. Meadows, author of **Thinking in Systems***
 > 
@@ -149,7 +149,7 @@ DDP Resources or building blocks:
     > *Bundle, as the name suggests, is a collection of several resources coming together to form an isolated branch in the DDP.  A bundle can define the instructions for enabling the specifications of a data product or a data application.*
     > 
 
-# Extensible Architecture: Workshop for Higher-Order Architectures
+## Extensible Architecture: Workshop for Higher-Order Architectures
 
 The flexible or composable infrastructure of the DDP allows it to become the foundation for any data design architecture an organisation chooses. The rearrangeable set of finite primitives enables users to declaratively trigger the necessary golden paths to interoperate and establish complex architectures.
 

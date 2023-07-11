@@ -1,4 +1,4 @@
-# What is Data Developer Platform
+## What is Data Developer Platform
 
 A Data Developer Platform is a Unified Infrastructure Specification to abstract complex and distributed subsystems and offer a consistent outcome-first experience to non-expert end users. A Data Developer Platform (DDP) can be thought of as an internal developer platform (IDP) for data engineers and data scientists. Just as an IDP provides a set of tools and services to help developers build and deploy applications more easily, a DDP provides a set of tools and services to help data professionals manage and analyze data more effectively.
 
@@ -8,17 +8,17 @@ In analogy to IDP, a DDP is designed to provide data professionals with a set of
 
 ![Untitled](./what_is_data_developer_platform/untitled.png)
 
-# Guiding Principles Behind DDP
+## Guiding Principles Behind DDP
 
 When you build a product, you build it with a purpose in mind. The Data Developer Platform specification was also similarly designed with a set of principles guiding development since ideation. The entire DDP spec sticks to these core guidelines:
 
-## Data-Product-First or Product Thinking
+### Data-Product-First or Product Thinking
 
 To establish DDP, the first step is to develop a product mindset and understand that data itself is a product. Establishing the product mindset is, in fact, the largest barrier in the data economy. However, unlike prevalent practices, data must be managed as a product to leverage optimal business value and incur minimal loss.
 
 While there is no technology barrier to treating data as a product, there is also no unique tech that could claim to be its ideal implementation. This is because imbibing a product mindset in the data economy is more of a cultural challenge. However, DDP as a specification comes along with templatised processes and practices that guide data teams with the meandering journey of establishing the culture of product mindset and consequently materialising data products as a result within weeks instead of months and years.
 
-### **Data Stack as a Product**
+#### **Data Stack as a Product**
 
 Such a product mindset led to a unified architecture, which is the backbone of DDP. On the contrary, assembled systems were developed as a collection of sidecars, each one solving an ad-hoc requirement. Every sidecar or point tool came with its own product philosophy, semantics, and capabilities which, over time, clashed with the capabilities of other point tools. So when these tools were assembled together, the data stack was not a product but a messy web; quite far from the merits of a product approach. Any user who used the assembled stack tumbled into the dark trenches of duplicated and misdirected effort, overwhelming change management, and inadequate data operationalisation.
 
@@ -26,7 +26,7 @@ On the other hand, unified systems approach the data stack as a product right fr
 
 If we take the same example we used [here](./why_ddp_for_data.md), in assembled systems, two different catalogs and policy engines would be created, operating in silos within the compatible product philosophy of each tool. Whereas, in unified systems, the cataloguing tool would gain visibility of policies for discoverability in the governance tool, and the governance tool would be able to extend policies to the catalog items. This becomes possible due to an **interoperable interface developed on top of the unified architecture**, essentially eliminating dual catalogs and governance engines.
 
-### Data as a Product
+#### Data as a Product
 
 Data behaves like a product when it becomes discoverable, addressable, accessible, governable, easy to understand, and in sync with the quality requirements and goals of its consumers. If the data stack itself is a collection of ad-hoc overlapping tools put together to enable the above (governance, observability, discoverability, etc.), over time, the overlap of capabilities results in multiple catalogs, governance engines, discrepant monitors, and parallel efforts to maintain the promised data experience.
 
@@ -34,7 +34,7 @@ Not surprisingly, this design breaks over time and the promise of experiencing d
 
 To truly enable the experience of data as a product, these capabilities need to be embedded as part of the product itself instead of being added as sidecars. The unified architecture makes this feasible by collapsing conflicting capabilities, progressively eliminating debt, and enabling data developers to focus on data for a change instead of burning hours on plumbing. 
 
-## Software Principles for Data
+### Software Principles for Data
 
 DDP is built as a programmable data platform which encapsulates the low-level data infrastructure and enables data developers to shift from build mode to operate mode with state-of-the-art developer experience. DDP achieves this through running infrastructure-as-code (IaC). Developers can create and deploy config files or new resources and declaratively provision, deploy, and manage them. For instance, provisioning RDS through IaC.
 
@@ -46,7 +46,7 @@ Data as a product is a subset of the data-as-a-software paradigm wherein data in
 
 ![Untitled](./what_is_data_developer_platform/untitled_1.png)
 
-# What is the tangible outcome of a DDP
+## What is the tangible outcome of a DDP
 
 A data developer platform establishes a flexible infrastructure to materialise desired data solutions and a plethora of data design patterns on top of its infrastructure. These design patterns are essentially frameworks that sit on top of data orchestrated by the DDP. A DDP’s job is to ensure the data is reliable and of the required data quality- enter **Data Products**.
 
@@ -78,7 +78,7 @@ A Data Product is a fundamental architectural unit of a data stack, and it has t
 2. Code or Instructions
 3. Infrastructure
 
-## What is a Data Product?
+### What is a Data Product?
 
 A Data Product is a fundamental and independent unit of your data stack that encompasses all the resources, instructions, metadata and data to serve a specific business purpose.
 
@@ -140,7 +140,7 @@ The unified infrastructure is future-proof in the sense that it is able to imple
 
 ![Untitled](./what_is_data_developer_platform/untitled_4.png)
 
-### The Data Product MVP and Higher Order Solutions
+#### The Data Product MVP and Higher Order Solutions
 
 A bare minimum DDP enables the infrastructure for data products, while a higher-order DDP comes with minimalistic templates for code and design frameworks. Plugging in data to a DDP allows it to capture and embed metadata and eventually serve data that checks off the requirements of a data product. DDP’s unified infrastructure and data-first approach is inherently the minimal viable pattern for a data product.
 
@@ -148,7 +148,7 @@ However, the story doesn’t end at that. Every organisation comes with its own 
 
 Once an architect or data engineer has access to low-level resources, they can compose them together to manifest higher-order complex designs such as those of data mesh, data fabric, and even further higher-order patterns such as CDPs and customer 360s- all of which are designed and aimed at serving valuable data products when and where needed.
 
-## W**hat does a Data Product  look like on DDP**
+### **What does a Data Product  look like on DDP**
 
 Broadly Data Product definition can be broken down into four aspects - Input, Transformation, SLOs and Output. Along with these, the user will have to create specs and makefile.
 
@@ -177,11 +177,11 @@ Edit image- generalise.
     The spec file outlines technical details such as identification, domain, versioning, intent, objectives, and SLOs for the Data Product. It is a reference and guide for developing, deploying, and maintaining the product to ensure alignment with requirements.
     
 
-### Sample
+#### Sample
 
 [https://github.com/tmdc-io/dataproduct-sample](https://github.com/tmdc-io/dataproduct-sample)
 
-# Summarising: Conceptual Philosophy of a Data Developer Platform
+## Summarising: Conceptual Philosophy of a Data Developer Platform
 
 A data developer platform’s philosophy is a direct parallel of the Operating System philosophy. Yes, the idea which literally changed the world by giving encapsulated technology into the hands of the masses.
 

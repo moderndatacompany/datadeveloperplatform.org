@@ -1,6 +1,6 @@
-# Why DDP for Data
+## Why DDP for Data
 
-# The Problem
+## The Problem
 
 The data world has been battling a persistent crisis, and it has only been exacerbated by the growing intensity of data owned and managed by organizations. Chaos has ensued for non-expert end users as data ecosystems progressively develop into complex and siloed systems with a continuous stream of point solutions added to the insane mix. Complex infrastructures requiring consistent maintenance deflect most of the engineering talent from high-value operations, such as developing data applications that directly impact the business and ultimately enhance the ROI of data teams. Inflexible and unstable, and therefore, fragile data pipelines constrict data engineering teams as a bottleneck for even simple data operations. It is not uncommon to hear [a whole new data pipeline being spawned to answer one specific business question](https://www.linkedin.com/posts/eczachly_dataengineering-activity-7037193178428436480-peDw?utm_source=share&utm_medium=member_desktop) or [1000K data warehouse tables being created from 6K source tables.](https://medium.com/kyligence/stop-the-madness-a412ac23d1a8)
 
@@ -18,11 +18,11 @@ Data swamps are no better than physical files in the basement- clogged with rich
 
 Two distinct features become more apparent with this kind of tooling overwhelm:
 
-### **1. Progressive overlap in Assembled Systems**
+#### **1. Progressive overlap in Assembled Systems**
 
 As more tools pop in, they increasingly develop the need to become independently operable, often based on user feedback. For instance, two different point tools, say one for cataloguing and another for governance, are plugged into your data stacks. This incites the need not just to learn the tools’ different philosophies, integrate, and maintain each one from scratch but eventually pop up completely parallel tracks. The governance tool starts requiring a native catalog, and the cataloguing tool requires policies manageable within its system. Now consider the same problem at scale, beyond just two point solutions. Even if we consider the cost of these parallel tracks as secondary, it is essentially a significantly disruptive design flaw that keeps splitting the topology of one unique capability into unmanageable duplicates.
 
-### **2. Consistent and increasing desire to Decentralise**
+#### **2. Consistent and increasing desire to Decentralise**
 
 What follows from assembled systems is the sudden overwhelm of managing multiple limbs of the system, and therefore, increasing complexity and friction for end users to get their hands on the data. While business domains, such as marketing, sales, support, etc., have to jump multiple hops to achieve the data they need, the organisation feels the pressure to lift all dependencies clogging the central data team and distributing the workload across these domains. Ergo, it was not a surprise to see how the early Data Mesh laid urgent focus on domain ownership, or decentralisation in other words. While the idea seems very appealing on theoretical grounds, how feasible is it in the field? If we lay this idea on any working business model, there are a few consequences:c
 
@@ -34,7 +34,7 @@ It’s both a skill- and resource-deficit issue. Moreover, with decades spent on
 
 ---
 
-# The Solution
+## The Solution
 
 The true value of assembled systems cannot be neglected. Its biggest achievement has perhaps been the revolutionary shift to the cloud, which has made data not just more accessible but also recoverable.
 
@@ -44,7 +44,7 @@ The Data-First Stack (DFS) is based on a unification approach or an umbrella s
 
 ![Untitled](./why_ddp_for_data/untitled.png)
 
-## Unified Architecture over Assembled Architecture
+### Unified Architecture over Assembled Architecture
 
 DFS, as implemented by your organisation’s data developer platform, brings together a curated set of self-service layers that eliminate redundant tools and processes to enable a reusable, modular, and composable operating platform, elevating user productivity. Now, instead of grinding to integrate and maintain hundreds of scattered solutions, users can put data first and focus on the core objectives: Building Data Applications that directly uplift business outcomes.
 
@@ -56,7 +56,7 @@ DDP serves as a unified platform that integrates various tools and technologies 
 
 ![Untitled](./why_ddp_for_data/untitled_1.png)
 
-## **A Closer Look at the Solution: Achieving the State of Data Products**
+### **A Closer Look at the Solution: Achieving the State of Data Products**
 
 The sole objective of Data Developer Platforms is to create and enable Data Products for various operations and domains in a business. DDP’s unified architecture has proven to be a fast and concrete path to establishing data products. The term “Data Products” is perhaps new, but the concept it defines has persisted since businesses started working with data, that is since a caveman exchanged three bags of berries for one piece of steak. Why that is should be clear once we expand on the eight core attributes of data products. To briefly summarise, **a data product enables reliable and high-quality data at scale to help accelerate business use cases.**
 
@@ -77,9 +77,9 @@ Businesses have desired each of these attributes in data since time immemorial, 
 
 We will soon find out how DDP bridges the gap between untrustworthy raw data and reliable Data Products, but before that, we need to see ***why*** the DDP specification has been a concrete approach so far. Platforms built with the DDP specification as a guideline have consistently delivered Data Products with full-proof testimonies from consumers of their data.
 
-# Why build a DDP for Data Products
+## Why build a DDP for Data Products
 
-## **Faster Time to Data Products**
+### **Faster Time to Data Products**
 
 Time and effort invested behind every deployment can vary based on the deployment load, team size, stage of organisation, expertise level, and much more. However, taking an average across hundred deployments, the time spent on specific tasks per deployment can be summarised as laid out by [internaldeveloperplatform.org](./why_ddp_for_data.md). These numbers can be replaced by calculating your own average stats per hundred deployments.
 
@@ -98,13 +98,13 @@ Time and effort invested behind every deployment can vary based on the deploymen
 
 *per 100 deployments
 
-### **Acceleration by Abstraction**
+#### **Acceleration by Abstraction**
 
 These numbers do not necessarily matter when the number of deployments is low. However, when it comes to large organisations managing several projects with hundreds or even thousands of deployments every week, these numbers start hurting the ROI of data teams massively. Even adding just one tailing zero to the stats above shows us how existing maintenance processes suck out the valuable time of engineers. 
 
 A Data Developer Platform is an easily operable, swift, self-served path to data products. With ready-to-deploy templates and standardised protocols, data developers can quickly spin up data applications without spending too much time on infrastructure dependencies and configurations. DDP enables **higher deployment frequency** for data products by abstracting most of the cognitive load and keeping the numbers from inflating drastically when the scale goes up.
 
-### **Acceleration by Standardisation**
+#### **Acceleration by Standardisation**
 
  The API-first infrastructure of DDP enables modularisation and interoperability with both native and external components ensuring quicker deployments and rollback abilities without having to spend hours on infrastructure chores. Users can choose to process data at the source, push down queries and workloads, or even move processing to native environments if needed. With central management across development to deployment, monitoring, and maintenance, and seamless discovery of open APIs, users can augment and manipulate the data programmatically, version, release, configure, monitor, reproduce and much more to dramatically enhance the speed of data application development.
 
@@ -118,7 +118,7 @@ Data developers can quickly deploy workloads by eliminating configuration drifts
 
 </aside>
 
-### **Acceleration by Modularisation**
+#### **Acceleration by Modularisation**
 
 But it is not just declarative infrastructure that enables faster time to data products. We also need to consider how adept the infrastructure is to enable the Data Products attributes: Discoverable, Addressable, Understandable, Natively Accessible, Trustworthy, Interoperable, Independent, and Secure. This also implies that governance and observability are no longer afterthoughts but are embedded in the data. By proactively addressing these aspects, organizations can enhance data quality, mitigate risks, and ensure compliance with regulatory requirements.
 
@@ -128,39 +128,39 @@ Other than resource or capability modularisation, DDP also incorporates the modu
 
 The standard configurations enable a single point of change management, given it’s built with reference to these atomic resources. The atomic units are able to easily communicate with each other to establish higher-order objectives such as, say, discoverability or policy management. Or even the standard data lifecycle processes such as data ingestion, processing, analysis, and visualisation - A DDP empowers data teams by providing a comprehensive platform that supports their end-to-end workflows. Data teams have the necessary tools, resources, and standardised practices to deliver high-quality data products, enabling them to make data-driven decisions and derive meaningful insights*.* You can read more on DDP building blocks [here](https://www.notion.so/Deployment-Link-6c059c4be1794cf9a5b252f797c5e614?pvs=21). 
 
-## **Fluid Data Product Developer Experience**
+### **Fluid Data Product Developer Experience**
 
 Data Products can be messy, given they encompass countless capabilities required around data. Governance policies, quality checks, clean cataloguing, accessible storage, transformation pipelines, orchestration of all the capabilities, and so much more. It is easy to understand how data engineers and data developers might feel trapped under thick layers of cognitive overload. Soon, the system and data bear the brunt of it. The data engineer’s hands are always full of countless open tickets, rendering no space for innovation or strategy.
 
 DDP cuts down these issues by offering the following capabilities specifically designed for developer experience:
 
-### Dynamic Configuration Management (DCM)
+#### Dynamic Configuration Management (DCM)
 
 Data Engineers are the victim of the current data ecosystem, as validated by a [recent study](https://www.helpnetsecurity.com/2021/10/25/data-engineers-burnout/) which reports 97% of data engineers suffering from burnout. The prevalent data stacks compel data engineers to work repeatedly on fixing fragile fragments of countless data pipelines spawned at the rate of constant change, which is an inherent factor of data and data stacks. DCM enables unified management instead of having to tend to multiple environments, configuration files, and resources for one simple modification. DCM enables this through workload-centric development, where developers can describe and declaratively run their workloads through a single specification file that abstracts infrastructure complexities and dependencies.
 
 ![Untitled](./why_ddp_for_data/untitled_2.png)
 
-### Extensibility and Customisability
+#### Extensibility and Customisability
 
 DDP supports extensibility and customisation, allowing data developers to incorporate their own tools, libraries, and frameworks into the platform. It provides APIs and hooks for integrating custom functionalities, enabling data developers to tailor the platform to their specific needs and extend its capabilities. It seamlessly integrates with popular developer tools, version control systems, container registries, orchestration frameworks, and infrastructure-as-code tools like Terraform. Data developers can track the number of reusable components and libraries within the DDP ecosystem. Measure the percentage of data products that leverage these reusable components, aiming for a high adoption rate. Monitor the ease of integrating external tools and technologies, and measure the required reduction in the integration effort.
 
-### Experimentation-Friendly
+#### Experimentation-Friendly
 
 By abstracting much of the cognitive overload, DDP opens up the ground for innovation, experiments, and mistakes - three key vitals of high-performance and high-ROI teams. A true data product cannot exist until a series of strategies have played out.  DDP not only surfaces virtualised layers as playgrounds but also shields the experimenter from the collateral damage of failed data product experiments. DDP takes the heat of innovation and also saves time spent on experimentation through smart capabilities, including intelligent data movement, semantic playgrounds, rollback abilities across pipelines and data assets, and declarative transformations where users can specify the inputs and outputs. DDP will automatically generate the necessary code to run the experiments. Data developers can declaratively prep, deploy, and de-provision clusters, provision databases and sidecar proxies, and manage secrets for lifetime with one-time credential updates- all through the simple and common syntax of DSL.
 
-### Standardisation
+#### Standardisation
 
 Developer experience is also significantly improved through the standardisation of key elements such as semantics, metrics, ontology, and taxonomy through consistent template prompts. The system auto-logs all operations and meta details to reduce process and pipeline overheads. Moreover, DDP comes with standardised templates for specifications and config files, drastically reducing the number of files that needs to be written and managed.
 
-### CLI-First
+#### CLI-First
 
 DOS enables a seamless experience for data developers by abstracting away repetitive and complex maintenance and integration overheads while allowing familiar CLI interfaces to run experiments, programmatically speak to data and resources, and build applications that directly impact business decisions and ROI. DDP becomes a complete self-service interface for developers where they can declaratively manage resources through APIs and the CLI.
 
-### Self-Service
+#### Self-Service
 
 DDP enables self-service for a broad band of data personas, including data engineers, business users, and domain teams. It allows a direct and asynchronous interface between data developers and data, eliminating complex layers of the infrastructure. Data developers can quickly spawn new applications and rapidly deploy them to multiple target environments or namespaces with configuration templates, abstracted credential management, and declarative workload specifications- all readily available for self-service. Containerised applications are consistently monitored and continuously tested for high uptime. In short, DDP brings together a curated set of self-service layers that eliminate redundant tools and processes to enable a reusable, modular, and composable operating platform, elevating user productivity.
 
-### Fail-Safe
+#### Fail-Safe
 
 DDP is highly fault-tolerant with no central point of failure and flexibility to spin up hotfix environments, allowing for maximum uptime and high availability. Data Developers can create and modify namespaces in isolated clusters, create and execute manifest files, and independently provision storage, compute, and other DDP resources for self-service development environments. Data developers can rest easy with real-time insights into the health and status of data pipelines, workflows, and services, allowing for proactive monitoring, issue detection, and troubleshooting. Built-in monitoring and health management capabilities track data product performance, reliability, and availability.
 
@@ -168,7 +168,7 @@ Real-time debugging in both dev and prod implementations enables rapid identific
 
 ![Untitled](./why_ddp_for_data/untitled_3.png)
 
-## Lower Cost of Data Product Ownership
+### Lower Cost of Data Product Ownership
 
 The total cost of data product ownership is narrowed down enough to enable the development of multiple data products within the same band of available resources. Metrics specifically used in high-innovation and, consequently, high-performance environments, such as hours saved per data developer, cost of failed experiments and time to recovery, are all brought down to show visible business impact.
 

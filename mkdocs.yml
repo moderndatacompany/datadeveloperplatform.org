@@ -57,5 +57,4 @@ nav:
     - Why: why_ddp_for_data.md
     - What: what_is_data_developer_platform.md
     - Architecture: architecture.md
-    - Capabilites: ddp_capabilities.md
-    - Data Product Spec: data_product_specification_on_a_ddp.md    
+    - Capabilites: ddp_capabilities.md   

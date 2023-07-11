@@ -1,6 +1,6 @@
-# DDP Capabilities
+## DDP Capabilities
 
-# DDP Core Capabilities
+## DDP Core Capabilities
 
 1. **Configuration Management**
     
@@ -23,9 +23,9 @@
     Granular access control mechanisms, based on attributes, regulate permissions and ensure secure access to data resources within the Data Products.
     
 
-# Capabilities in the Interest of Data Personas
+## Capabilities in the Interest of Data Personas
 
-## Data Developer
+### Data Developer
 
 Responsible for building, deploying, monitoring, and scaling Data Products, aka Data Engineers, AI/ML Engineers.
 
@@ -34,7 +34,7 @@ Responsible for building, deploying, monitoring, and scaling Data Products, aka 
 - **Streamlined Deployment and Monitoring:** DDP automates and streamlines the deployment and monitoring processes, enabling data developers to quickly iterate on their data products and ensure their optimal performance and reliability.
 - **Declarative Freedom; Scalability:** DDP provides the necessary infrastructure and tools to scale data products efficiently, handling increasing data volumes, processing demands, and user traffic. Data developer can declaratively build data pipelines and has more time to focus on spinning up applications and deploying them to produce tangible impact on the business ROI.
 
-## Operator
+### Operator
 
 Responsible for infrastructure orchestration, deployment management, and ensuring data governance and security within the platform
 
@@ -42,7 +42,7 @@ Responsible for infrastructure orchestration, deployment management, and ensurin
 - **Simplified DevOps:** DDP enables operators to implement streamlined DevOps practices specific to data development. It automates infrastructure provisioning, configuration management, and deployment processes, reducing operational complexities and enabling faster time-to-market.
 - **Security and Compliance:** DDP includes robust security and compliance features, allowing DDP operators to enforce access controls, data protection measures, and privacy regulations. It ensures that data products and associated processes adhere to organisational and regulatory requirements.
 
-## Data Developers in Action
+### Data Developers in Action
 
 Personas across DDP’s three planes and their primary task(s) in each plane.
 
@@ -54,7 +54,7 @@ Personas across DDP’s three planes and their primary task(s) in each plane.
 | Development Plane | Data Engineer (Declarative specs) | Platform Engineer (Resource health, Extensibility) | Operator (DevOps, Supervision) |
 | Data Activation Plane | Data Engineer (App development) | Data Producer & Consumer (Data generation & consumption) | Operator (DevOps, Supervision) |
 
-# Workflow: Data Product Development
+## Workflow: Data Product Development
 
 Baseline: The three planes are pre-connected in DDP, so data developers are not required to integrate the capabilities across these planes.
 
