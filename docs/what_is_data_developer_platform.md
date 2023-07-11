@@ -6,7 +6,7 @@ A DDP typically includes tools for data integration, processing, storage, and an
 
 In analogy to IDP, a DDP is designed to provide data professionals with a set of building blocks that they can use to build data products, services, and data applications more quickly and efficiently. By providing a unified and standardised platform for managing data, a data developer platform can help organizations make better use of their data assets and drive business value.
 
-![Untitled](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/Untitled.png)
+![Untitled](./what_is_data_developer_platform/untitled.png)
 
 # Guiding Principles Behind DDP
 
@@ -24,7 +24,7 @@ Such a product mindset led to a unified architecture, which is the backbone of D
 
 On the other hand, unified systems approach the data stack as a product right from initiation. Any ad-hoc problem is managed not by adding clashing sidecars but by combining fundamental building blocks of the unified architecture, which have common philosophies and semantics and no overlapping capabilities. Moreover, extensibility is not compromised in this approach. Data developers can still bring in point tools, but when they plug them into the unified infra, their primary capability is identified and propagated across the data stack instead of these tools operating in silos.
 
-If we take the same example we used [here](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d.md), in assembled systems, two different catalogs and policy engines would be created, operating in silos within the compatible product philosophy of each tool. Whereas, in unified systems, the cataloguing tool would gain visibility of policies for discoverability in the governance tool, and the governance tool would be able to extend policies to the catalog items. This becomes possible due to an **interoperable interface developed on top of the unified architecture**, essentially eliminating dual catalogs and governance engines.
+If we take the same example we used [here](./why_ddp_for_data.md), in assembled systems, two different catalogs and policy engines would be created, operating in silos within the compatible product philosophy of each tool. Whereas, in unified systems, the cataloguing tool would gain visibility of policies for discoverability in the governance tool, and the governance tool would be able to extend policies to the catalog items. This becomes possible due to an **interoperable interface developed on top of the unified architecture**, essentially eliminating dual catalogs and governance engines.
 
 ### Data as a Product
 
@@ -44,7 +44,7 @@ DDP approaches data as software and wraps code systematically to enable object-o
 
 Data as a product is a subset of the data-as-a-software paradigm wherein data inherently behaves like a product when managed like a software product, and the system is able to serve data products on the fly. This approach enables high clarity into downstream and upstream impact, along with the flexibility to zoom in and modify modular components.
 
-![Untitled](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/Untitled%201.png)
+![Untitled](./what_is_data_developer_platform/untitled_1.png)
 
 # What is the tangible outcome of a DDP
 
@@ -53,7 +53,7 @@ A data developer platform establishes a flexible infrastructure to materialise d
 > *Data Product brings product thinking and software development principles to the data domain, allowing data experts to accelerate value creation and delivery. Data Product empowers developers by streamlining the creation process, eliminating duplication of assets and efforts, and enabling rapid iteration and experimentation.*
 > 
 
-![Untitled](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/Untitled%202.png)
+![Untitled](./what_is_data_developer_platform/untitled_2.png)
 
 A Data Developer Platform enabling the Data Product Construct
 
@@ -99,7 +99,7 @@ DDP approaches data as software and wraps **all code in one place** to enable ob
 
 Developers can experience state-of-the-art devX when it comes to code through standardised configurations, templates for scale, familiar CLI and DSL, coding prompts, importable libraries, and much more. In addition to that, becoming data-first within weeks becomes possible through the composable resources of DDP that are directed by the code in each Data Product as necessary.
 
-![Untitled](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/Untitled%203.png)
+![Untitled](./what_is_data_developer_platform/untitled_3.png)
 
 ### **Data & Metadata**
 
@@ -138,7 +138,7 @@ The unified infrastructure is future-proof in the sense that it is able to imple
 > The fundamentals don’t change nearly as fast as the latest tech de jour. Focus on what doesn’t change and build from there. ~ *Joe Reis, Author of Fundamentals of Data Engineering*
 > 
 
-![Untitled](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/Untitled%204.png)
+![Untitled](./what_is_data_developer_platform/untitled_4.png)
 
 ### The Data Product MVP and Higher Order Solutions
 
@@ -152,7 +152,7 @@ Once an architect or data engineer has access to low-level resources, they can c
 
 Broadly Data Product definition can be broken down into four aspects - Input, Transformation, SLOs and Output. Along with these, the user will have to create specs and makefile.
 
-![Edit image- generalise.](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda/MicrosoftTeams-image_(2).png)
+![Edit image- generalise.](./what_is_data_developer_platform/microsoftteams-image_(2).png)
 
 Edit image- generalise.
 

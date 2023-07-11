@@ -42,7 +42,7 @@ However, the requirement for unified over assembled systems was felt largely due
 
 The Data-First Stack (DFS) is based on a unification approach or an umbrella solution that targets the weak fragments of the Traditional and Modern data stacks as a whole instead of proponing their patchwork approach. A DDP, which is the technical embodiment of a Data-First Stack, democratises data product development by abstracting away low-level complexities and providing a unified platform that enables data professionals across the organisation to contribute and collaborate on data products. This democratisation fosters innovation, creativity, and a sense of ownership among data professionals.
 
-![Untitled](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d/Untitled.png)
+![Untitled](./why_ddp_for_data/untitled.png)
 
 ## Unified Architecture over Assembled Architecture
 
@@ -50,14 +50,11 @@ DFS, as implemented by your organisation’s data developer platform, brings tog
 
 The Data-First Stack is essentially a unified architecture design. The best parallel analogy for a unified architecture would be an operating system (OS). An OS is a program that manages all programs necessary for the end user to experience the service of outcome-driven programs instead of users figuring out ‘how’ to run those programs. Most of us have experienced OS on our laptops, phones, and, in fact, on most interface-driven devices. Users are hooked to these systems because they are abstracted from the pains of booting, maintaining, and running the low-level nuances of day-to-day applications that directly bring them value.
 
-<aside>
-💡 *The unified architecture of a Data-First Stack is materialised by a Data Developer Platform, enabling a self-serve data infra by abstracting users from the procedural complexities of applications and declaratively serving the outcomes.*
-
-</aside>
+> 💡 *The unified architecture of a Data-First Stack is materialised by a Data Developer Platform, enabling a self-serve data infra by abstracting users from the procedural complexities of applications and declaratively serving the outcomes.*
 
 DDP serves as a unified platform that integrates various tools and technologies involved in the data product delivery process. It seamlessly integrates with popular developer tools, version control systems, container registries, orchestration frameworks, and infrastructure-as-code tools like Terraform. This integration simplifies the development workflow, enhances developer productivity, and enables the seamless adoption of new tools and technologies.
 
-![Untitled](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d/Untitled%201.png)
+![Untitled](./why_ddp_for_data/untitled_1.png)
 
 ## **A Closer Look at the Solution: Achieving the State of Data Products**
 
@@ -74,7 +71,7 @@ The sole objective of Data Developer Platforms is to create and enable Data Prod
 | Independent | A Data Product must be self-contained and valuable on its own, and the data it presents should serve a purpose. |
 | Secure | A Data Product must be guarded against bad actors, human or machine, throughout its journey in the data stack. |
 
-You can learn more about data products [here](What%20is%20Data%20Developer%20Platform%204a090917cc5241298d2ee77870609eda.md).
+You can learn more about data products [here](./what_is_data_developer_platform.md).
 
 Businesses have desired each of these attributes in data since time immemorial, but only recently some of them have achieved this state like many other breakthroughs of the 21st century, especially around data including AI - the self-operating machine dependent on trustworthy data.
 
@@ -84,7 +81,7 @@ We will soon find out how DDP bridges the gap between untrustworthy raw data and
 
 ## **Faster Time to Data Products**
 
-Time and effort invested behind every deployment can vary based on the deployment load, team size, stage of organisation, expertise level, and much more. However, taking an average across hundred deployments, the time spent on specific tasks per deployment can be summarised as laid out by [internaldeveloperplatform.org](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d.md). These numbers can be replaced by calculating your own average stats per hundred deployments.
+Time and effort invested behind every deployment can vary based on the deployment load, team size, stage of organisation, expertise level, and much more. However, taking an average across hundred deployments, the time spent on specific tasks per deployment can be summarised as laid out by [internaldeveloperplatform.org](./why_ddp_for_data.md). These numbers can be replaced by calculating your own average stats per hundred deployments.
 
 | Procedure | Frequency (%of deployments) | Dev Time in hours (including waiting and errors) | Ops Time in hours (including waiting and errors) |
 | --- | --- | --- | --- |
@@ -116,6 +113,7 @@ DDP introduces standardised resources and design patterns, creating a shared lan
 Data developers can quickly deploy workloads by eliminating configuration drifts and vast number of config files through standard base configurations that do not require environment- or dependency-specific variables. The platform auto-generates manifest files for apps, enabling CRUD ops, execution, and meta storage on top.
 
 <aside>
+
 💡 *In summary, DDP provides workload-centric development where data developers declare their requirements, and DDP takes care of provisioning and de-provisioning resources and resolving the dependencies. The impact is instantly realised with a visible increase in deployment frequency.*
 
 </aside>
@@ -140,7 +138,7 @@ DDP cuts down these issues by offering the following capabilities specifically d
 
 Data Engineers are the victim of the current data ecosystem, as validated by a [recent study](https://www.helpnetsecurity.com/2021/10/25/data-engineers-burnout/) which reports 97% of data engineers suffering from burnout. The prevalent data stacks compel data engineers to work repeatedly on fixing fragile fragments of countless data pipelines spawned at the rate of constant change, which is an inherent factor of data and data stacks. DCM enables unified management instead of having to tend to multiple environments, configuration files, and resources for one simple modification. DCM enables this through workload-centric development, where developers can describe and declaratively run their workloads through a single specification file that abstracts infrastructure complexities and dependencies.
 
-![Untitled](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d/Untitled%202.png)
+![Untitled](./why_ddp_for_data/untitled_2.png)
 
 ### Extensibility and Customisability
 
@@ -168,7 +166,7 @@ DDP is highly fault-tolerant with no central point of failure and flexibility to
 
 Real-time debugging in both dev and prod implementations enables rapid identification and resolution of issues before they become problems. Multi-hop rollbacks also provide an added layer of protection against unexpected issues, allowing for rapid restoration of previous configurations in the event of a problem. Finally, declarative governance and quality, in tandem with pre-defined SLAs, make DataOps a seamless and integrated part of the larger data management workflow and ensure that dataOps is no longer an afterthought but a core component of the data management approach.
 
-![Untitled](Why%20DDP%20for%20Data%20e4da146b580c45528aef97ce2624b10d/Untitled%203.png)
+![Untitled](./why_ddp_for_data/untitled_3.png)
 
 ## Lower Cost of Data Product Ownership
 

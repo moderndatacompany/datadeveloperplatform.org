@@ -46,22 +46,13 @@ Responsible for infrastructure orchestration, deployment management, and ensurin
 
 Personas across DDP’s three planes and their primary task(s) in each plane.
 
-![Untitled](DDP%20Capabilities%204748ea071b3c487ca6cf3a4ff9b1df66/Untitled.png)
+![Untitled](./ddp_capabilities/untitled.png)
 
 | DDP Plane | Primary Persona | Secondary Persona | Tertiary Persona |
 | --- | --- | --- | --- |
-| Control Plane | Platform Engineer
-(Orchestration health) | Operator
-(Governance) | Data Engineer
-(Metadata insights) |
-| Development Plane | Data Engineer
-(Declarative specs) | Platform Engineer
-(Resource health, Extensibility) | Operator
-(DevOps, Supervision) |
-| Data Activation Plane | Data Engineer
-(App development) | Data Producer & Consumer
-(Data generation & consumption) | Operator
-(DevOps, Supervision) |
+| Control Plane | Platform Engineer (Orchestration health) | Operator (Governance) | Data Engineer (Metadata insights) |
+| Development Plane | Data Engineer (Declarative specs) | Platform Engineer (Resource health, Extensibility) | Operator (DevOps, Supervision) |
+| Data Activation Plane | Data Engineer (App development) | Data Producer & Consumer (Data generation & consumption) | Operator (DevOps, Supervision) |
 
 # Workflow: Data Product Development
 

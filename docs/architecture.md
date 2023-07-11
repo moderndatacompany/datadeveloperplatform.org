@@ -6,7 +6,7 @@ DDP allow users to operationalise the platform through a triple-plane conceptual
 
 Control & Data plane separation decouples the governance and execution of data applications. This gives the flexibility to run the DDP in a hybrid environment and deploy a multi-tenant data architecture. Organizations can manage cloud storage and compute instances with a centralised control plane.
 
-![DDP Planes Specification.png](Architecture%20d0c7576ffcf74cc78b0f68d3116085a7/DDP_Planes_Specification.png)
+![DDP Planes Specification.png](./architecture/ddp_planes_specification.png)
 
 ## Control Plane
 
@@ -66,7 +66,7 @@ Core Kernel provides another degree of abstraction by further translating the AP
 
 User kernel is the third layer of abstraction over the APIs of the core and cloud kernels. The secondary extension points and programming paradigms of the Data Operating System, like the various Stacks and certain Primitives, can be envisioned to be working at this level. While you can directly communicate with the cloud kernel APIs, as a user of the Data Operating System, you can choose to rather work with the core and user kernels alone. The core kernel is where users work with essential features like Security, Metadata Management, and Resource Orchestration. In contrast, the user kernel can be thought of as the layer where the users have complete flexibility in terms of which components or primitives they want to leverage and which they do not require.
 
-![Untitled](Architecture%20d0c7576ffcf74cc78b0f68d3116085a7/Untitled.png)
+![Untitled](./architecture/untitled.png)
 
 # Structural Architecture: Hierarchical Model
 
@@ -95,7 +95,7 @@ The Data Developer Platform, technically defined, is a finite set of unique reso
 → Continues to traverse n-times for n-order problems (mesh, fabric, data apps, etc.)
 > 
 
-![Hierarchical Solutioning.png](Architecture%20d0c7576ffcf74cc78b0f68d3116085a7/Hierarchical_Solutioning.png)
+![Hierarchical Solutioning.png](./architecture/hierarchical_solutioning.png)
 
 Therefore, when something faults in a DDP, every n-order solution only loses part of its capability, and the data developer:
 
