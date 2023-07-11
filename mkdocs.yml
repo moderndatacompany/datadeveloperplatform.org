@@ -53,7 +53,7 @@ markdown_extensions:
 
 #### Update for navigation tabs/options ####      
 nav:
-    - Home: home.md
+    - Home: index.md
     - Why: why_ddp_for_data.md
     - What: what_is_data_developer_platform.md
     - Architecture: architecture.md
