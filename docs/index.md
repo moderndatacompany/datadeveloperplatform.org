@@ -11,9 +11,10 @@ The likes of Uber, Google, and Airbnb have shown an inspiring discipline around 
 
 A data-first stack is only truly data-first if it is built in accordance with your internal infrastructure. Therefore, we have the Data Developer Platform infrastructure specification, established and rolled out specifically for the data domain with strong inspiration from the well-proven and acclaimed [Internal Developer Platform](https://www.datadeveloperplatform.org/#) spec. We have tried to mirror the site structure as much as possible so readers can easily correlate the fundamentals.‍
 
-[What is DDP?](https://www.datadeveloperplatform.org/#)
+<a href="https://datadeveloperplatform.org/what_is_data_developer_platform/" style="color: blue;">What is DDP?</a>
 
-[What is IDP?](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
+<a href="https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/" style="color: blue;">What is IDP?</a>
+
 
 ## **Who should read the Data Developer Platform site?**
 
