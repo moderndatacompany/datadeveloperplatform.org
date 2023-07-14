@@ -1,20 +1,24 @@
 #### DO NOT CHANGE ####
 site_name: Data Developer Platform
-copyright: Supported by The Modern Data Company (https://themoderndatacompany.com) 
+copyright: Copyright ⓒ 2023 The Modern Data Company
 theme:
     name: material
     custom_dir: overrides
     language: en
     features:
         - navigation.tabs
-        - navigation.tabs.sticky
         - navigation.sections
-        - navigation.instant
+        - navigation.expand
         - navigation.footer
-        - toc.integrate
-        - header.autohide        
+        - navigation.indexes
+        - navigation.instant
+        - navigation.top
+        - navigation.tracking
+        - toc.integrate 
     logo: assets/ddp.png
-    favicon: assets/favicon.ico
+    favicon: assets/favicon.png
+    logo_link_footer: https://themoderndatacompany.com
+    logo_footer: ../assets/ModernLogo.png
     font:
         text: Spectral
         code: Source Code Pro
@@ -23,6 +27,17 @@ theme:
 plugins:
     - mermaid2
     - search
+extra:
+  generator: true
+  annotate:
+    json: [.s2]
+  social:
+    - icon: ../assets/facebook.png
+      link: https://www.facebook.com/themoderndatacompany
+    - icon: ../assets/twitter.png
+      link: https://twitter.com/TheModernDataCo
+    - icon: ../assets/linkedin.png
+      link: https://www.linkedin.com/company/themoderndatacompany
 extra_css:
     - stylesheets/extra.css
 extra_javascript:
