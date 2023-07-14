@@ -23,7 +23,18 @@ theme:
         text: Spectral
         code: Source Code Pro
     palette:
-        primary: white
+      - scheme: default
+        primary: blue-grey
+        accent: blue-grey
+        toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+      - scheme: slate
+        primary: grey
+        accent: grey
+        toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
 plugins:
     - mermaid2
     - search

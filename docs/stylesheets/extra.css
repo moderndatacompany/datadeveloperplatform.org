@@ -296,9 +296,13 @@ body {
     --md-code-font-family: var(--md-code-font, _), SFMono-Regular, Consolas, Menlo, monospace
 }
 
-/* body[data-md-color-scheme="default"] .md-logo img {
+body[data-md-color-scheme="default"] .md-logo img {
+    filter: invert(0);
+}
+
+body[data-md-color-scheme="slate"] .md-logo img {
     filter: invert(1);
-} */
+}
 
 
 aside,
