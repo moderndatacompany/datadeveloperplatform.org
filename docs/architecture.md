@@ -107,15 +107,16 @@ Therefore, when something faults in a DDP, every n-order solution only loses par
 Resources are atomic and logical units with their own life cycle, which can be composed together and also with other components and stacks to act as the building block of the Data Developer. Platform. They can be treated as artefacts that could be source-controlled and managed using a version control system. Every resource can be thought of as an abstraction that allows you to enumerate specific goals and outcomes in a declarative manner instead of the arduous process of defining ‘how to reach those outcomes’.
 
 DDP Resources or building blocks:
-
+<br/>
 1. Workflow
     
     > *Workflow is a manifestation of DAGs that streamlines and automates big data tasks. DOS uses it for managing both batch and streaming data ingestion and processing.*
-    > 
+    >
+
 2. Service
-    
+
     > *Service is a long-running process that is receiving and/or serving APIs for real-time data, such as event processing and stock trades. It gathers, processes, and scrutinises streaming data for quick reactions.*
-    > 
+    >
 3. Policy
     
     > *The policy regulates behaviour in a Data Operating System. Access policies control individuals, while data policies control the rules for data integrity, security, quality, and use during its lifecycle and state change.*
