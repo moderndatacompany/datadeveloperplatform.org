@@ -107,45 +107,45 @@ Therefore, when something faults in a DDP, every n-order solution only loses par
 Resources are atomic and logical units with their own life cycle, which can be composed together and also with other components and stacks to act as the building block of the Data Developer. Platform. They can be treated as artefacts that could be source-controlled and managed using a version control system. Every resource can be thought of as an abstraction that allows you to enumerate specific goals and outcomes in a declarative manner instead of the arduous process of defining ‘how to reach those outcomes’.
 
 DDP Resources or building blocks:
-<br/>
-1. Workflow
+<br>
+* Workflow
     
     > *Workflow is a manifestation of DAGs that streamlines and automates big data tasks. DOS uses it for managing both batch and streaming data ingestion and processing.*
     >
 
-2. Service
+* Service
 
     > *Service is a long-running process that is receiving and/or serving APIs for real-time data, such as event processing and stock trades. It gathers, processes, and scrutinises streaming data for quick reactions.*
     >
-3. Policy
+* Policy
     
     > *The policy regulates behaviour in a Data Operating System. Access policies control individuals, while data policies control the rules for data integrity, security, quality, and use during its lifecycle and state change.*
     > 
-4. Depot
+* Depot
     
     > *Depot offers a uniform way to connect to various data sources, simplifying the process by abstracting the various protocols and complexities of the source systems into a common taxonomy and route.*
     > 
-5. Cluster
+* Cluster
     
     > *A cluster is a collection of computation resources and configurations on which you run data engineering, data science, and analytics workloads. A Cluster is provisioned for exploratory, querying, and ad-hoc analytics workloads.*
     > 
-6. Secret
+* Secret
     
     > *Secret store sensitive information like passwords, tokens, or keys. Users access it with a ‘Secret’ instead of using sensitive information. This lets you monitor and control access while reducing data leak risks.*
     > 
-7. Database
+* Database
     
     > *Database resource is for the use cases where output is saved in a specific format. This resource can be used in all scenarios where you need to syndicate structured data. Once you create a Database, you can put a depot & service on top of it to serve data instantly.*
     > 
-8. Compute
+* Compute
     
     > *Compute resources are the processing power required by any workflow/service or query workload to carry out tasks. Compute is related to common server components, such as CPUs and RAM. So a physical server within a cluster would be considered a compute resource, as it may have multiple CPUs and gigabytes of RAM.*
     > 
-9. Operator
+* Operator
     
     > *Operator registers resources that are not native to DDP and enables the orchestrator in the control to identify and orchestrate these resources. The operator resources make DDP truly extensible and customisable.*
     > 
-10. Bundle
+* Bundle
     
     > *Bundle, as the name suggests, is a collection of several resources coming together to form an isolated branch in the DDP.  A bundle can define the instructions for enabling the specifications of a data product or a data application.*
     > 
