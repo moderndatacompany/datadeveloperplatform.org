@@ -109,8 +109,8 @@ Resources are atomic and logical units with their own life cycle, which can be c
 DDP Resources or building blocks:
 
 
-* **Workflow**: *Workflow is a manifestation of DAGs that streamlines and automates big data tasks. DOS uses it for managing both batch and streaming data ingestion and processing.*
-
+* **Workflow**: *Workflow is a manifestation of DAGs that streamlines and automates big data tasks. DOS uses it for managing both batch and streaming data ingestion & processing.*
+  
 * **Service**: *Service is a long-running process that is receiving and/or serving APIs for real-time data, such as event processing and stock trades. It gathers, processes, and scrutinises streaming data for quick reactions.*
   
 * **Policy**: *The policy regulates behaviour in a Data Operating System. Access policies control individuals, while data policies control the rules for data integrity, security, quality, and use during its lifecycle and state change.*
