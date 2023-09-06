@@ -49,6 +49,9 @@ extra:
       link: https://twitter.com/TheModernDataCo
     - icon: /assets/linkedin.png
       link: https://www.linkedin.com/company/themoderndatacompany
+  analytics:
+    provider: google
+    property: 3TFG961ZZZ
 extra_css:
     - stylesheets/extra.css
 extra_javascript:
