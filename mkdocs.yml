@@ -51,7 +51,7 @@ extra:
       link: https://www.linkedin.com/company/themoderndatacompany
   analytics:
     provider: google
-    property: 3TFG961ZZZ
+    property: G-3TFG961ZZZ
 extra_css:
     - stylesheets/extra.css
 extra_javascript:
