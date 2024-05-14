@@ -152,25 +152,25 @@ Once an architect or data engineer has access to low-level resources, they can c
 
 Broadly Data Product definition can be broken down into four aspects - Input, Transformation, SLOs and Output. Along with these, the user will have to create specs and makefile.
 
-![Edit image- generalise.](./what_is_data_developer_platform/microsoftteams-image_(2).png)
+![DDP as implemented on DataOS](./what_is_data_developer_platform/microsoftteams-image_(2).png)
 
 Edit image- generalise.
 
 1. Input
     
-    The input aspect of a Data Product focuses on the technical mechanisms for data access or ingestion, such as APIs, streaming, connectors, and batch processes. These components enable the Data Product to acquire data from various sources, ensuring seamless and reliable data flow into the system for further processing and analysis. **DataOS Depots and APIs are supported mechanisms. We are exploring ways to support third-party tools like ADF, Fivetran etc.**
+    The input aspect of a Data Product focuses on the technical mechanisms for data access or ingestion, such as APIs, streaming, connectors, and batch processes. These components enable the Data Product to acquire data from various sources, ensuring seamless and reliable data flow into the system for further processing and analysis. **DDP Depots and APIs are supported mechanisms along with support for third-party tools like ADF, Fivetran etc.**
     
 2. Transformation
     
-    The transformation aspect of a Data Product involves the processing and manipulating of data within the product. This may include data cleansing, enrichment, aggregation, normalisation, or any other data transformations required to make the valuable data for analysis and consumption, which meets the desired format, structure, and quality. **Transformation is defined using DataOS Flare, Benthos, Lens and Alpha stacks. We are exploring ways to support third-party tools like DBT, DB notebooks etc.**
+    The transformation aspect of a Data Product involves the processing and manipulating of data within the product. This may include data cleansing, enrichment, aggregation, normalisation, or any other data transformations required to make the valuable data for analysis and consumption, which meets the desired format, structure, and quality. **Transformation is defined using DDP Native-Stacks and Operators that integrate third-party tools like DBT, DB notebooks etc.**
     
 3. SLOs 
     
-    SLOs define the performance, availability, accessibility, and quality targets a Data Product aims to achieve. These objectives ensure that the Data Product meets the required service levels regarding quality and governance. SLOs may include metrics defined on business, metadata and operations data.  Monitoring and managing SLOs help ensure that the Data Product performs optimally and meets the expectations of its consumers. **SLOs are defined using DataOS resources like quality, policy, alerts, monitors and metrics.**
+    SLOs define the performance, availability, accessibility, and quality targets a Data Product aims to achieve. These objectives ensure that the Data Product meets the required service levels regarding quality and governance. SLOs may include metrics defined on business, metadata and operations data.  Monitoring and managing SLOs help ensure that the Data Product performs optimally and meets the expectations of its consumers. **SLOs are defined using DDP resources like quality, policy, alerts, monitors and metrics.**
     
 4. Output
     
-    The output aspect of a Data Product refers to the results or outcomes generated from the data analysis and processing. This includes the table, stream, APIs, visualisations, or web app delivered to the data consumers. **DataOS Depots, APIs, Streamlit App, JDBC ports etc., are supported.** 
+    The output aspect of a Data Product refers to the results or outcomes generated from the data analysis and processing. This includes the table, stream, APIs, visualisations, or web app delivered to the data consumers. **DDP Depots, APIs, Streamlit Applications, JDBC ports etc., are supported.** 
     
 5. Spec File
     
