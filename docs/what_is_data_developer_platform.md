@@ -154,7 +154,6 @@ Broadly Data Product definition can be broken down into four aspects - Input, Tr
 
 ![DDP as implemented on DataOS](./what_is_data_developer_platform/microsoftteams-image_(2).png)
 
-Edit image- generalise.
 
 1. Input
     
