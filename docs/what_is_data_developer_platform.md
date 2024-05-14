@@ -153,7 +153,7 @@ Once an architect or data engineer has access to low-level resources, they can c
 Broadly Data Product definition can be broken down into four aspects - Input, Transformation, SLOs and Output. Along with these, the user will have to create specs and makefile.
 
 ![DDP as implemented on DataOS](./what_is_data_developer_platform/microsoftteams-image_(2).png)
-
+DDP as implemented on DataOS (a data platform modelled after DDP principles)
 
 1. Input
     
