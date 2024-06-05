@@ -39,7 +39,7 @@ plugins:
     - mermaid2
     - search
 extra:
-  generator: true
+  generator: false
   annotate:
     json: [.s2]
   social:
