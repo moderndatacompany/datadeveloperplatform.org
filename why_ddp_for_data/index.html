@@ -1,0 +1,1084 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href=".." rel="prev"/>
+<link href="../what_is_data_developer_platform/" rel="next"/>
+<link href="../assets/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<title>Why - Data Developer Platform</title>
+<link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Custom admonition icons -->
+<!-- Custom tag icons -->
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Spectral:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Spectral";--md-code-font:"Source Code Pro"}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3TFG961ZZZ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3TFG961ZZZ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3TFG961ZZZ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+</head>
+<body data-md-color-accent="blue-grey" data-md-color-primary="blue-grey" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#why-ddp-for-data">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine base classes -->
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<!-- Link to home -->
+<a aria-label="Data Developer Platform" class="md-header__button md-logo" data-md-component="logo" href=".." title="Data Developer Platform">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Logo -->
+<img alt="logo" src="../assets/ddp.png"/>
+</a>
+<!-- Button to open drawer -->
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<!-- Header title -->
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Data Developer Platform
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Why
+            
+          </span>
+</div>
+</div>
+</div>
+<!-- Color palette -->
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="blue-grey" data-md-color-media="" data-md-color-primary="blue-grey" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio">
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="grey" data-md-color-media="" data-md-color-primary="grey" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio">
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</input></input></form>
+<!-- Site language selector -->
+<!-- Button to open search modal -->
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<!-- Search interface -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<!-- Search input -->
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<!-- Button to open search -->
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<!-- Search options -->
+<nav aria-label="Search" class="md-search__options">
+<!-- Button to share search -->
+<!-- Button to reset search -->
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<!-- Search suggestions -->
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<!-- Search results -->
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Repository information -->
+</nav>
+<!-- Navigation tabs (sticky) -->
+</header>
+<div class="md-container" data-md-component="container">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Hack: unset variable, as we're using it recursively in tabs-item.html -->
+<!-- Navigation tabs -->
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="..">
+      Home
+    </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="./">
+      Why
+    </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../what_is_data_developer_platform/">
+      What
+    </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../architecture/">
+      Architecture
+    </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../ddp_capabilities/">
+      Capabilites
+    </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine class according to configuration -->
+<!-- Main navigation -->
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<!-- Site title -->
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Data Developer Platform" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Data Developer Platform">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Logo -->
+<img alt="logo" src="../assets/ddp.png"/>
+</a>
+    Data Developer Platform
+  </label>
+<!-- Repository information -->
+<!-- Render item list -->
+<ul class="md-nav__list" data-md-scrollfix="">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-nav__item md-nav__item--active">
+<!-- Active checkbox expands items contained within nested section -->
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<!-- Hack: see partials/toc.html for more information -->
+<!-- Render table of contents, if not empty -->
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Why
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Why
+      </a>
+<!-- Show table of contents -->
+<nav aria-label="" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-ddp-for-data">
+    Why DDP for Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-problem">
+    The Problem
+  </a>
+<nav aria-label="The Problem" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-progressive-overlap-in-assembled-systems">
+    1. Progressive overlap in Assembled Systems
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-consistent-and-increasing-desire-to-decentralise">
+    2. Consistent and increasing desire to Decentralise
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-solution">
+    The Solution
+  </a>
+<nav aria-label="The Solution" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unified-architecture-over-assembled-architecture">
+    Unified Architecture over Assembled Architecture
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-closer-look-at-the-solution-achieving-the-state-of-data-products">
+    A Closer Look at the Solution: Achieving the State of Data Products
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-build-a-ddp-for-data-products">
+    Why build a DDP for Data Products
+  </a>
+<nav aria-label="Why build a DDP for Data Products" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faster-time-to-data-products">
+    Faster Time to Data Products
+  </a>
+<nav aria-label="Faster Time to Data Products" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acceleration-by-abstraction">
+    Acceleration by Abstraction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acceleration-by-standardisation">
+    Acceleration by Standardisation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acceleration-by-modularisation">
+    Acceleration by Modularisation
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fluid-data-product-developer-experience">
+    Fluid Data Product Developer Experience
+  </a>
+<nav aria-label="Fluid Data Product Developer Experience" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-configuration-management-dcm">
+    Dynamic Configuration Management (DCM)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extensibility-and-customisability">
+    Extensibility and Customisability
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#experimentation-friendly">
+    Experimentation-Friendly
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standardisation">
+    Standardisation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cli-first">
+    CLI-First
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#self-service">
+    Self-Service
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fail-safe">
+    Fail-Safe
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lower-cost-of-data-product-ownership">
+    Lower Cost of Data Product Ownership
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<!-- Main navigation item -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-nav__item">
+<a class="md-nav__link" href="../what_is_data_developer_platform/">
+        What
+      </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-nav__item">
+<a class="md-nav__link" href="../architecture/">
+        Architecture
+      </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ddp_capabilities/">
+        Capabilites
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Tags -->
+<!-- Actions -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Actions -->
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+<h1>Why</h1>
+<!-- Page content -->
+<h2 id="why-ddp-for-data">Why DDP for Data<a class="headerlink" href="#why-ddp-for-data" title="Permanent link">¶</a></h2>
+<h2 id="the-problem">The Problem<a class="headerlink" href="#the-problem" title="Permanent link">¶</a></h2>
+<p>The data world has been battling a persistent crisis, and it has only been exacerbated by the growing intensity of data owned and managed by organizations. Chaos has ensued for non-expert end users as data ecosystems progressively develop into complex and siloed systems with a continuous stream of point solutions added to the insane mix. Complex infrastructures requiring consistent maintenance deflect most of the engineering talent from high-value operations, such as developing data applications that directly impact the business and ultimately enhance the ROI of data teams. Inflexible and unstable, and therefore, fragile data pipelines constrict data engineering teams as a bottleneck for even simple data operations. It is not uncommon to hear <a href="https://www.linkedin.com/posts/eczachly_dataengineering-activity-7037193178428436480-peDw?utm_source=share&amp;utm_medium=member_desktop">a whole new data pipeline being spawned to answer one specific business question</a> or <a href="https://medium.com/kyligence/stop-the-madness-a412ac23d1a8">1000K data warehouse tables being created from 6K source tables.</a></p>
+<p><strong>Data Consumers</strong> suffer from unreliable data quality, <strong>Data Producers</strong> suffer from duplicated efforts to produce data for ambiguous objectives, and <strong>Data Engineers</strong> suffer from flooding requests from both data production and consumption sides. The dearth of exemplary developer experience also robs data developers of the ability to declaratively manage resources, environments, and requests so they can focus completely on data solutions. Due to these diversions and the lack of a unified platform, it is nearly impossible for DEs to build short and crisp data-to-insight roadmaps. On top of that, it’s a constant struggle to adhere to the organization’s changing data compliance standards as governance and observability become afterthoughts in a <strong>maintenance-first setting</strong>. This directly impacts the quality and experience of data that passes through meandering pipelines blotched with miscellaneous integrations.</p>
+<p><strong>Arriving at Assembled Data Stacks</strong></p>
+<p>The concept of having an assembled architecture emerged over time to solve these common problems that infested the data community at large. One tool could tend to a particular problem, and assembling a collection of such tools would solve several issues. But, targeting patches of the problem led to a disconnected basket of solutions ending up with fragile data pipelines and dumping all data to a central lake that eventually created unmanageable data swamps across industries. This augmented the problem by adding the cognitive load of a plethora of tooling that had to be integrated and managed separately through expensive resources and experts.</p>
+<p>Data swamps are no better than physical files in the basement- clogged with rich, useful, yet dormant data that businesses are unable to operationalise due to disparate and untrustworthy semantics. Semantic untrustworthiness stems from a chaotic clutter of MDS, overwhelmed with tools, integrations, and unstable pipelines. Another level of semantics is required to understand the low-level semantics, complicating the problem further.</p>
+<p><img alt="https://data-operating-system.com/wp-content/uploads/2023/02/The-MAD-Ecosystem.png" src="https://data-operating-system.com/wp-content/uploads/2023/02/The-MAD-Ecosystem.png"/></p>
+<p><a href="https://data-operating-system.com/wp-content/uploads/2023/02/The-MAD-Ecosystem.png">The MAD Ecosystem | Source: mattturck.com</a></p>
+<p>Two distinct features become more apparent with this kind of tooling overwhelm:</p>
+<h4 id="1-progressive-overlap-in-assembled-systems"><strong>1. Progressive overlap in Assembled Systems</strong><a class="headerlink" href="#1-progressive-overlap-in-assembled-systems" title="Permanent link">¶</a></h4>
+<p>As more tools pop in, they increasingly develop the need to become independently operable, often based on user feedback. For instance, two different point tools, say one for cataloguing and another for governance, are plugged into your data stacks. This incites the need not just to learn the tools’ different philosophies, integrate, and maintain each one from scratch but eventually pop up completely parallel tracks. The governance tool starts requiring a native catalog, and the cataloguing tool requires policies manageable within its system. Now consider the same problem at scale, beyond just two point solutions. Even if we consider the cost of these parallel tracks as secondary, it is essentially a significantly disruptive design flaw that keeps splitting the topology of one unique capability into unmanageable duplicates.</p>
+<h4 id="2-consistent-and-increasing-desire-to-decentralise"><strong>2. Consistent and increasing desire to Decentralise</strong><a class="headerlink" href="#2-consistent-and-increasing-desire-to-decentralise" title="Permanent link">¶</a></h4>
+<p>What follows from assembled systems is the sudden overwhelm of managing multiple limbs of the system, and therefore, increasing complexity and friction for end users to get their hands on the data. While business domains, such as marketing, sales, support, etc., have to jump multiple hops to achieve the data they need, the organisation feels the pressure to lift all dependencies clogging the central data team and distributing the workload across these domains. Ergo, it was not a surprise to see how the early Data Mesh laid urgent focus on domain ownership, or decentralisation in other words. While the idea seems very appealing on theoretical grounds, how feasible is it in the field? If we lay this idea on any working business model, there are a few consequences:c</p>
+<ul>
+<li>Not enough skilled professionals to allocate to each individual domain - Practically, how feasible is the idea of having data teams for each domain?</li>
+<li>Not enough professionals or budget to disrupt existing processes, detangle pipelines, and embed brand-new infrastructures.</li>
+<li>Not enough experts to help train and onboard during migration.</li>
+</ul>
+<p>It’s both a skill- and resource-deficit issue. Moreover, with decades spent on evolving data stacks with not much value to show, organisations are not ideally inclined to pour in more investments and efforts to rip and replace their work. In essence, 𝐀𝐮𝐭𝐨𝐧𝐨𝐦𝐲 instead should become the higher priority over Decentralisation if that is the ultimate objective.</p>
+<hr/>
+<h2 id="the-solution">The Solution<a class="headerlink" href="#the-solution" title="Permanent link">¶</a></h2>
+<p>The true value of assembled systems cannot be neglected. Its biggest achievement has perhaps been the revolutionary shift to the cloud, which has made data not just more accessible but also recoverable.</p>
+<p>However, the requirement for unified over assembled systems was felt largely due to the overwhelming build-up of cruft within the bounds of data engineering. The more tools, the more overlap and cruft. **Traditional approaches often require specialised skills and resources, leading to bottlenecks and limited innovation.</p>
+<p>The Data-First Stack (DFS) is based on a unification approach or an umbrella solution that targets the weak fragments of the Traditional and Modern data stacks as a whole instead of proponing their patchwork approach. A DDP, which is the technical embodiment of a Data-First Stack, democratises data product development by abstracting away low-level complexities and providing a unified platform that enables data professionals across the organisation to contribute and collaborate on data products. This democratisation fosters innovation, creativity, and a sense of ownership among data professionals.</p>
+<p><img alt="Untitled" src="untitled.png"/></p>
+<h3 id="unified-architecture-over-assembled-architecture">Unified Architecture over Assembled Architecture<a class="headerlink" href="#unified-architecture-over-assembled-architecture" title="Permanent link">¶</a></h3>
+<p>DFS, as implemented by your organisation’s data developer platform, brings together a curated set of self-service layers that eliminate redundant tools and processes to enable a reusable, modular, and composable operating platform, elevating user productivity. Now, instead of grinding to integrate and maintain hundreds of scattered solutions, users can put data first and focus on the core objectives: Building Data Applications that directly uplift business outcomes.</p>
+<p>The Data-First Stack is essentially a unified architecture design. The best parallel analogy for a unified architecture would be an operating system (OS). An OS is a program that manages all programs necessary for the end user to experience the service of outcome-driven programs instead of users figuring out ‘how’ to run those programs. Most of us have experienced OS on our laptops, phones, and, in fact, on most interface-driven devices. Users are hooked to these systems because they are abstracted from the pains of booting, maintaining, and running the low-level nuances of day-to-day applications that directly bring them value.</p>
+<blockquote>
+<p>💡 <em>The unified architecture of a Data-First Stack is materialised by a Data Developer Platform, enabling a self-serve data infra by abstracting users from the procedural complexities of applications and declaratively serving the outcomes.</em></p>
+</blockquote>
+<p>DDP serves as a unified platform that integrates various tools and technologies involved in the data product delivery process. It seamlessly integrates with popular developer tools, version control systems, container registries, orchestration frameworks, and infrastructure-as-code tools like Terraform. This integration simplifies the development workflow, enhances developer productivity, and enables the seamless adoption of new tools and technologies.</p>
+<p><img alt="Untitled" src="untitled_1.png"/></p>
+<h3 id="a-closer-look-at-the-solution-achieving-the-state-of-data-products"><strong>A Closer Look at the Solution: Achieving the State of Data Products</strong><a class="headerlink" href="#a-closer-look-at-the-solution-achieving-the-state-of-data-products" title="Permanent link">¶</a></h3>
+<p>The sole objective of Data Developer Platforms is to create and enable Data Products for various operations and domains in a business. DDP’s unified architecture has proven to be a fast and concrete path to establishing data products. The term “Data Products” is perhaps new, but the concept it defines has persisted since businesses started working with data, that is since a caveman exchanged three bags of berries for one piece of steak. Why that is should be clear once we expand on the eight core attributes of data products. To briefly summarise, <strong>a data product enables reliable and high-quality data at scale to help accelerate business use cases.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discoverable</td>
+<td>A Data Product must be easy to find.</td>
+</tr>
+<tr>
+<td>Addressable</td>
+<td>A Data Product must be easy to refer to across the data ecosystem.</td>
+</tr>
+<tr>
+<td>Understandable</td>
+<td>A Data Product must be easy to comprehend &amp; consume.</td>
+</tr>
+<tr>
+<td>Natively Accessible</td>
+<td>A Data Product must be easy to operate on with pre-existing tools and processes in the domain that users (domain citizens) are already comfortable with.</td>
+</tr>
+<tr>
+<td>Trustworthy</td>
+<td>A Data Product must guarantee the quality and authenticity of the data it presents.</td>
+</tr>
+<tr>
+<td>Interoperable</td>
+<td>A Data Product must be able to network with other data products and resources from across the data stack.</td>
+</tr>
+<tr>
+<td>Independent</td>
+<td>A Data Product must be self-contained and valuable on its own, and the data it presents should serve a purpose.</td>
+</tr>
+<tr>
+<td>Secure</td>
+<td>A Data Product must be guarded against bad actors, human or machine, throughout its journey in the data stack.</td>
+</tr>
+</tbody>
+</table>
+<p>You can learn more about data products <a href="../what_is_data_developer_platform/">here</a>.</p>
+<p>Businesses have desired each of these attributes in data since time immemorial, but only recently some of them have achieved this state like many other breakthroughs of the 21<sup>st</sup> century, especially around data including AI - the self-operating machine dependent on trustworthy data.</p>
+<p>We will soon find out how DDP bridges the gap between untrustworthy raw data and reliable Data Products, but before that, we need to see <strong><em>why</em></strong> the DDP specification has been a concrete approach so far. Platforms built with the DDP specification as a guideline have consistently delivered Data Products with full-proof testimonies from consumers of their data.</p>
+<h2 id="why-build-a-ddp-for-data-products">Why build a DDP for Data Products<a class="headerlink" href="#why-build-a-ddp-for-data-products" title="Permanent link">¶</a></h2>
+<h3 id="faster-time-to-data-products"><strong>Faster Time to Data Products</strong><a class="headerlink" href="#faster-time-to-data-products" title="Permanent link">¶</a></h3>
+<p>Time and effort invested behind every deployment can vary based on the deployment load, team size, stage of organisation, expertise level, and much more. However, taking an average across hundred deployments, the time spent on specific tasks per deployment can be summarised as laid out by <a href="./">internaldeveloperplatform.org</a>. These numbers can be replaced by calculating your own average stats per hundred deployments.</p>
+<table>
+<thead>
+<tr>
+<th>Procedure</th>
+<th>Frequency (%of deployments)</th>
+<th>Dev Time in hours (including waiting and errors)</th>
+<th>Ops Time in hours (including waiting and errors)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add/update app configurations (e.g. env variables)</td>
+<td>5%*</td>
+<td>1h*</td>
+<td>1h*</td>
+</tr>
+<tr>
+<td>Add services and dependencies</td>
+<td>1%*</td>
+<td>16h*</td>
+<td>8h*</td>
+</tr>
+<tr>
+<td>Add/update resources</td>
+<td>0.38%*</td>
+<td>8h*</td>
+<td>24h*</td>
+</tr>
+<tr>
+<td>Refactor &amp; document architecture</td>
+<td>0.28%*</td>
+<td>40h*</td>
+<td>8h*</td>
+</tr>
+<tr>
+<td>Waiting due to blocked environment</td>
+<td>0,5%*</td>
+<td>15h*</td>
+<td>0h*</td>
+</tr>
+<tr>
+<td>Spinning up environment</td>
+<td>0,33%*</td>
+<td>24h*</td>
+<td>24h*</td>
+</tr>
+<tr>
+<td>Onboarding devs, retrain &amp; swap teams</td>
+<td>1%*</td>
+<td>80h*</td>
+<td>16h*</td>
+</tr>
+<tr>
+<td>Rollback failed deployment</td>
+<td>1,75%</td>
+<td>10*</td>
+<td>20*</td>
+</tr>
+<tr>
+<td>Debugging, error tracing</td>
+<td>4.40%</td>
+<td>10*</td>
+<td>10*</td>
+</tr>
+<tr>
+<td>Waiting for other teams</td>
+<td>6.30%</td>
+<td>16*</td>
+<td>16*</td>
+</tr>
+</tbody>
+</table>
+<p>*per 100 deployments</p>
+<h4 id="acceleration-by-abstraction"><strong>Acceleration by Abstraction</strong><a class="headerlink" href="#acceleration-by-abstraction" title="Permanent link">¶</a></h4>
+<p>These numbers do not necessarily matter when the number of deployments is low. However, when it comes to large organisations managing several projects with hundreds or even thousands of deployments every week, these numbers start hurting the ROI of data teams massively. Even adding just one tailing zero to the stats above shows us how existing maintenance processes suck out the valuable time of engineers. </p>
+<p>A Data Developer Platform is an easily operable, swift, self-served path to data products. With ready-to-deploy templates and standardised protocols, data developers can quickly spin up data applications without spending too much time on infrastructure dependencies and configurations. DDP enables <strong>higher deployment frequency</strong> for data products by abstracting most of the cognitive load and keeping the numbers from inflating drastically when the scale goes up.</p>
+<h4 id="acceleration-by-standardisation"><strong>Acceleration by Standardisation</strong><a class="headerlink" href="#acceleration-by-standardisation" title="Permanent link">¶</a></h4>
+<p>The API-first infrastructure of DDP enables modularisation and interoperability with both native and external components ensuring quicker deployments and rollback abilities without having to spend hours on infrastructure chores. Users can choose to process data at the source, push down queries and workloads, or even move processing to native environments if needed. With central management across development to deployment, monitoring, and maintenance, and seamless discovery of open APIs, users can augment and manipulate the data programmatically, version, release, configure, monitor, reproduce and much more to dramatically enhance the speed of data application development.</p>
+<p>DDP introduces standardised resources and design patterns, creating a shared language and best practices for data product development. This standardisation enhances collaboration among data developers, promotes code reusability, and reduces the risk of errors and inconsistencies in data products. Standardisation of configurations and templates plays a vital role in expediting the development of data products. Templates and preconfigured settings can be leveraged to expedite the creation of new data products, eliminating the need for repetitive and time-consuming setup and maintenance. </p>
+<p>Data developers can quickly deploy workloads by eliminating configuration drifts and vast number of config files through standard base configurations that do not require environment- or dependency-specific variables. The platform auto-generates manifest files for apps, enabling CRUD ops, execution, and meta storage on top.</p>
+<aside>
+
+💡 *In summary, DDP provides workload-centric development where data developers declare their requirements, and DDP takes care of provisioning and de-provisioning resources and resolving the dependencies. The impact is instantly realised with a visible increase in deployment frequency.*
+
+</aside>
+<h4 id="acceleration-by-modularisation"><strong>Acceleration by Modularisation</strong><a class="headerlink" href="#acceleration-by-modularisation" title="Permanent link">¶</a></h4>
+<p>But it is not just declarative infrastructure that enables faster time to data products. We also need to consider how adept the infrastructure is to enable the Data Products attributes: Discoverable, Addressable, Understandable, Natively Accessible, Trustworthy, Interoperable, Independent, and Secure. This also implies that governance and observability are no longer afterthoughts but are embedded in the data. By proactively addressing these aspects, organizations can enhance data quality, mitigate risks, and ensure compliance with regulatory requirements.</p>
+<p>DDP’s modular infrastructure with fundamental atomic building blocks, where each block facilitates a unique capability on data, enables the above seamlessly. Decoupling services is a huge accelerator. And an even bigger accelerator is decoupling data applications from the data infrastructure. These two components are dangerously tied together in existing structures, leading to far more resources spent on tending to infra requirements from scratch for every application.</p>
+<p>Other than resource or capability modularisation, DDP also incorporates the modularisation of high-level solutions. For instance, DDP provides modularisation of governance policies with attribute-based access control (ABAC) mechanisms to ensure granular permissions regulation and secure data resource access. It enables fine-grained control over who can access, modify, and interact with data products, ensuring data privacy, compliance, and governance.</p>
+<p>The standard configurations enable a single point of change management, given it’s built with reference to these atomic resources. The atomic units are able to easily communicate with each other to establish higher-order objectives such as, say, discoverability or policy management. Or even the standard data lifecycle processes such as data ingestion, processing, analysis, and visualisation - A DDP empowers data teams by providing a comprehensive platform that supports their end-to-end workflows. Data teams have the necessary tools, resources, and standardised practices to deliver high-quality data products, enabling them to make data-driven decisions and derive meaningful insights<em>.</em> You can read more on DDP building blocks <a href="https://datadeveloperplatform.org/architecture/#:~:text=DDP%20Resources%20or%20building%20blocks">here</a>. </p>
+<h3 id="fluid-data-product-developer-experience"><strong>Fluid Data Product Developer Experience</strong><a class="headerlink" href="#fluid-data-product-developer-experience" title="Permanent link">¶</a></h3>
+<p>Data Products can be messy, given they encompass countless capabilities required around data. Governance policies, quality checks, clean cataloguing, accessible storage, transformation pipelines, orchestration of all the capabilities, and so much more. It is easy to understand how data engineers and data developers might feel trapped under thick layers of cognitive overload. Soon, the system and data bear the brunt of it. The data engineer’s hands are always full of countless open tickets, rendering no space for innovation or strategy.</p>
+<p>DDP cuts down these issues by offering the following capabilities specifically designed for developer experience:</p>
+<h4 id="dynamic-configuration-management-dcm">Dynamic Configuration Management (DCM)<a class="headerlink" href="#dynamic-configuration-management-dcm" title="Permanent link">¶</a></h4>
+<p>Data Engineers are the victim of the current data ecosystem, as validated by a <a href="https://www.helpnetsecurity.com/2021/10/25/data-engineers-burnout/">recent study</a> which reports 97% of data engineers suffering from burnout. The prevalent data stacks compel data engineers to work repeatedly on fixing fragile fragments of countless data pipelines spawned at the rate of constant change, which is an inherent factor of data and data stacks. DCM enables unified management instead of having to tend to multiple environments, configuration files, and resources for one simple modification. DCM enables this through workload-centric development, where developers can describe and declaratively run their workloads through a single specification file that abstracts infrastructure complexities and dependencies.</p>
+<p><img alt="Untitled" src="untitled_2.png"/></p>
+<h4 id="extensibility-and-customisability">Extensibility and Customisability<a class="headerlink" href="#extensibility-and-customisability" title="Permanent link">¶</a></h4>
+<p>DDP supports extensibility and customisation, allowing data developers to incorporate their own tools, libraries, and frameworks into the platform. It provides APIs and hooks for integrating custom functionalities, enabling data developers to tailor the platform to their specific needs and extend its capabilities. It seamlessly integrates with popular developer tools, version control systems, container registries, orchestration frameworks, and infrastructure-as-code tools like Terraform. Data developers can track the number of reusable components and libraries within the DDP ecosystem. Measure the percentage of data products that leverage these reusable components, aiming for a high adoption rate. Monitor the ease of integrating external tools and technologies, and measure the required reduction in the integration effort.</p>
+<h4 id="experimentation-friendly">Experimentation-Friendly<a class="headerlink" href="#experimentation-friendly" title="Permanent link">¶</a></h4>
+<p>By abstracting much of the cognitive overload, DDP opens up the ground for innovation, experiments, and mistakes - three key vitals of high-performance and high-ROI teams. A true data product cannot exist until a series of strategies have played out.  DDP not only surfaces virtualised layers as playgrounds but also shields the experimenter from the collateral damage of failed data product experiments. DDP takes the heat of innovation and also saves time spent on experimentation through smart capabilities, including intelligent data movement, semantic playgrounds, rollback abilities across pipelines and data assets, and declarative transformations where users can specify the inputs and outputs. DDP will automatically generate the necessary code to run the experiments. Data developers can declaratively prep, deploy, and de-provision clusters, provision databases and sidecar proxies, and manage secrets for lifetime with one-time credential updates- all through the simple and common syntax of DSL.</p>
+<h4 id="standardisation">Standardisation<a class="headerlink" href="#standardisation" title="Permanent link">¶</a></h4>
+<p>Developer experience is also significantly improved through the standardisation of key elements such as semantics, metrics, ontology, and taxonomy through consistent template prompts. The system auto-logs all operations and meta details to reduce process and pipeline overheads. Moreover, DDP comes with standardised templates for specifications and config files, drastically reducing the number of files that needs to be written and managed.</p>
+<h4 id="cli-first">CLI-First<a class="headerlink" href="#cli-first" title="Permanent link">¶</a></h4>
+<p>DDP enables a seamless experience for data developers by abstracting away repetitive and complex maintenance and integration overheads while allowing familiar CLI interfaces to run experiments, programmatically speak to data and resources, and build applications that directly impact business decisions and ROI. DDP becomes a complete self-service interface for developers where they can declaratively manage resources through APIs and the CLI.</p>
+<h4 id="self-service">Self-Service<a class="headerlink" href="#self-service" title="Permanent link">¶</a></h4>
+<p>DDP enables self-service for a broad band of data personas, including data engineers, business users, and domain teams. It allows a direct and asynchronous interface between data developers and data, eliminating complex layers of the infrastructure. Data developers can quickly spawn new applications and rapidly deploy them to multiple target environments or namespaces with configuration templates, abstracted credential management, and declarative workload specifications- all readily available for self-service. Containerised applications are consistently monitored and continuously tested for high uptime. In short, DDP brings together a curated set of self-service layers that eliminate redundant tools and processes to enable a reusable, modular, and composable operating platform, elevating user productivity.</p>
+<h4 id="fail-safe">Fail-Safe<a class="headerlink" href="#fail-safe" title="Permanent link">¶</a></h4>
+<p>DDP is highly fault-tolerant with no central point of failure and flexibility to spin up hotfix environments, allowing for maximum uptime and high availability. Data Developers can create and modify namespaces in isolated clusters, create and execute manifest files, and independently provision storage, compute, and other DDP resources for self-service development environments. Data developers can rest easy with real-time insights into the health and status of data pipelines, workflows, and services, allowing for proactive monitoring, issue detection, and troubleshooting. Built-in monitoring and health management capabilities track data product performance, reliability, and availability.</p>
+<p>Real-time debugging in both dev and prod implementations enables rapid identification and resolution of issues before they become problems. Multi-hop rollbacks also provide an added layer of protection against unexpected issues, allowing for rapid restoration of previous configurations in the event of a problem. Finally, declarative governance and quality, in tandem with pre-defined SLAs, make DataOps a seamless and integrated part of the larger data management workflow and ensure that dataOps is no longer an afterthought but a core component of the data management approach.</p>
+<p><img alt="Untitled" src="untitled_3.png"/></p>
+<h3 id="lower-cost-of-data-product-ownership">Lower Cost of Data Product Ownership<a class="headerlink" href="#lower-cost-of-data-product-ownership" title="Permanent link">¶</a></h3>
+<p>The total cost of data product ownership is narrowed down enough to enable the development of multiple data products within the same band of available resources. Metrics specifically used in high-innovation and, consequently, high-performance environments, such as hours saved per data developer, cost of failed experiments and time to recovery, are all brought down to show visible business impact.</p>
+<p>Quantitatively, as we saw above, DDP significantly cuts down time and resources spent on infrastructure management, enabling teams to redirect their newfound excess to directly profitable verticals such as application development and innovative experiments. Resource optimisation is also one of the key USPs of DDP, given it optimises design on the level of resources to cut down duplication of pipelines for new or complex solutions.</p>
+<p>DDP provides mechanisms for the efficient scaling of data products. It allows for the seamless provisioning of resources, autoscaling of computing and storage, and load balancing to handle increasing data volumes and processing demands. This ensures optimised performance and scalability of data products, enabling them to handle large-scale data processing and analytics tasks.</p>
+<!-- Source file information -->
+<!-- Was this page helpful? -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine feedback configuration -->
+<!-- Determine whether to show feedback -->
+<!-- Was this page helpful? -->
+<!-- Comment system -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Comment system -->
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer">
+<nav aria-label="" class="md-footer__inner md-grid">
+<a class="md-footer__link md-footer__link--prev" href=".." rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+</div>
+</a>
+<a class="md-footer__link md-footer__link--next" href="../what_is_data_developer_platform/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              What
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<!-- Repository information -->
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.tracking", "toc.integrate"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+</body>
+</html>
